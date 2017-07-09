@@ -151,6 +151,21 @@ Dictionary {
   showAll: [Function: showAll] }
 ```
 
+## Hash
+
+### Concepts
+
+* key
+* hash function
+* collision
+
+### Handling Collitions
+
+* Separate Chaining - Each array element of a hash table stores another data structure, such as another array.
+* Linear Probing - Should be chosen over separate chaining when your array for storing data can be fairly large.
+
+## Set
+
 
 
 
