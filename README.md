@@ -23,4 +23,31 @@ print(samenums[0]); // displays 400
 ```
 This illustration explains it well:
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/JialunC/Data-Structures-and-Algorithms-with-JavaScript/blob/master/docs/shallow-copy.png)
+
+### An example of deep copy in Javascript
+
+In this case, modification of either remains unique to samenums and nums.
+
+```
+function copy(arr1, arr2) {
+ for (var i = 0; i < arr1.length; ++i) {
+  arr2[i] = arr1[i];
+ }
+}
+
+var nums = [];
+for (var i = 0; i < 100; ++i) {
+ nums[i] = i+1;
+}
+var samenums = [];
+
+copy(nums, samenums);
+nums[0] = 400;
+print(samenums[0]); // displays 1
+
+```
+![alt text](https://github.com/JialunC/Data-Structures-and-Algorithms-with-JavaScript/blob/master/docs/deep-copy.png)
+
+
+
