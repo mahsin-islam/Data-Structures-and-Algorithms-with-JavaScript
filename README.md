@@ -49,5 +49,58 @@ print(samenums[0]); // displays 1
 ```
 ![alt text](https://github.com/JialunC/Data-Structures-and-Algorithms-with-JavaScript/blob/master/docs/deep-copy.png)
 
+## Page 43 Two-Dimensional and Multidimensional Arrays
+
+### Two-Dimensional Arrays
+
+
+```
+var nums = Array.matrix(5,5,0); // (numrows, numcols, initial)
+print(nums[1][1]); // displays 0
+var names = Array.matrix(3,3,"");
+names[1][2] = "Joe";
+print(names[1][2]); // display "Joe"
+
+```
+Create a two-dimensional array and initialize it to a set of values in one line:
+```
+
+var grades = [[89, 77, 78],[76, 82, 81],[91, 94, 89]];
+print(grades[2][2]); // displays 89
+
+```
+
+### Jagged Arrays
+
+A jagged array is an array where the rows in the array may have a different number of elements.
+
+## Linked List, Stack and Queue
+
+This section will be documented in three separated folders.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
