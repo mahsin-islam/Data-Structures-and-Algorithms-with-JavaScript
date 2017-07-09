@@ -164,7 +164,17 @@ Dictionary {
 * Separate Chaining - Each array element of a hash table stores another data structure, such as another array.
 * Linear Probing - Should be chosen over separate chaining when your array for storing data can be fairly large.
 
-## Set
+
+## Binary Trees and Binary Search Tress
+
+### Definitions
+
+* leaf
+* binary trees - restrict the number of child nodes to no more than two.
+* path - the series of edges you follow to get from one node to another node.
+* tree traversal - visiting all the nodes in a tree in some particular order is known as a tree traversal.
+
+
 
 
 
