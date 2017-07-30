@@ -1,8 +1,3 @@
-# Queue
-
-## An Array-Based Queue Class Implementation
-Refactored from p60 of the textbook.
-```
 class queue {
   constructor() {
     this.dataStore = [];
@@ -40,8 +35,12 @@ class queue {
     }
   }
 }
-```
 
-## Using queue
-
-### 
+//test ground
+let tomQueue = new queue();
+tomQueue.enqueue('Learning to fly');
+tomQueue.enqueue('On the Turning away');
+tomQueue.enqueue('Lick It Up');
+console.log(tomQueue.dataStore);
+tomQueue.dequeue();
+console.log(tomQueue.dataStore);
