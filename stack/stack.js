@@ -1,8 +1,3 @@
-# Stack
-
-## How to build a simple stack 
-Refactored from p50 of the textbook.
-```
 class stack {
   constructor(){
     this.dataStore = [];
@@ -48,13 +43,3 @@ console.log('Stack after two pops: ' + tomStack.dataStore)
 //clear test ground
 tomStack.clear();
 console.log('Stack dataStore after clear:' + tomStack.dataStore)
-```
-## When to use the stack class
-p53 of the textbook
-
-### Multiple Base Conversions
-
-### Palindromes
-
-### Demonstrating Recursion
-
