@@ -1,8 +1,3 @@
-# Stack
-
-## How to build a simple stack 
-Refactored from p50 of the textbook.
-```
 class stack {
   constructor(){
     this.dataStore = [];
@@ -32,11 +27,24 @@ class stack {
     this.top = 0;
   }
 }
-```
-## When to use the stack class
-p53 of the textbook
-### Multiple Base Conversions
-See multiple-base-conversions.js in this folder
-### Palindromes
-See test-palindromes.js
 
+function testPalindromes (string) {
+  let s = new stack();
+  for (let i = 0; i < string.length; i ++){
+    s.push(string[i]);
+  }
+  let revString = '';
+  s.dataStore.forEach ( (element) => {
+    revString += s.pop();
+    }
+  );
+  if (revString === string) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//test ground
+console.log(testPalindromes('racecar'))
+console.log(testPalindromes('hello'))

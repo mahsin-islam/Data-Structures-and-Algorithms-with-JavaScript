@@ -43,5 +43,11 @@ class queue {
 ```
 
 ## Using queue
+Useful for simulation and sorting data
 
-### 
+### Sorting Data with Queues
+This example involves a sorting technique called radix sort.
+See queueSorting.js in this folder
+
+### Priority Queues
+See priority.js inside this folder

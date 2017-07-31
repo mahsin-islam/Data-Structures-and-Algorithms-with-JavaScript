@@ -1,8 +1,3 @@
-# Stack
-
-## How to build a simple stack 
-Refactored from p50 of the textbook.
-```
 class stack {
   constructor(){
     this.dataStore = [];
@@ -32,11 +27,19 @@ class stack {
     this.top = 0;
   }
 }
-```
-## When to use the stack class
-p53 of the textbook
-### Multiple Base Conversions
-See multiple-base-conversions.js in this folder
-### Palindromes
-See test-palindromes.js
 
+function mulBase(num, base) {
+  var s = new stack();
+  do {
+    s.push(num % base)
+    num = Math.floor(num / base)
+  } while (num > 0)
+  let result = ''
+  while (s.length() > 0){
+    result += s.pop()
+  }
+  return result
+}
+
+//test ground
+console.log(mulBase(32,2))
