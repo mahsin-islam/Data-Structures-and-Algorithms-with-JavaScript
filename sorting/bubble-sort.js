@@ -17,7 +17,7 @@ class Array {
   }
 }
 
-let newArray = new Array(100);
+let newArray = new Array(10);
 newArray.generateRandom();
 // console.log(newArray.dataStore);
 
